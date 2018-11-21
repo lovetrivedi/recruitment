@@ -22,6 +22,7 @@ export class Context {
   constructor(request: Request, db: any) {
     this.db = db;
     this.request = request;
+    this.t = () => 'error';
   }
 
   properties = new DataLoader(keys =>
