@@ -1,6 +1,6 @@
 /* @flow */
 
-import { GraphQLObjectType, GraphQLFloat } from 'graphql';
+import { GraphQLObjectType, GraphQLFloat, GraphQLInt } from 'graphql';
 import { GraphQLDateTime } from 'graphql-iso-date';
 
 import { globalIdField } from 'graphql-relay';
@@ -22,11 +22,11 @@ export const PropertyType = new GraphQLObjectType({
       resolve: parent => parent.land_surface,
     },
     numberOfRooms: {
-      type: GraphQLFloat,
+      type: GraphQLInt,
       resolve: parent => parent.number_of_rooms,
     },
     numberOfParkings: {
-      type: GraphQLFloat,
+      type: GraphQLInt,
       resolve: parent => parent.number_of_parkings,
     },
 

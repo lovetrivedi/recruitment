@@ -102,19 +102,27 @@ export const Property = (props: Props) => {
                   padding: 16,
                 }}
               >
-                <Typography variant="h6" css={{ padding: 16 }}>
+                <Typography variant="h6" css={{ padding: 16, paddingTop: 0 }}>
                   Property
                 </Typography>
                 <PropertyUpsertLead>
                   {props => {
                     return (
-                      <div className="App">
+                      <div className="App" style={{ paddingLeft: 15 }}>
                         <UserForm
                           user={imaginaryUser}
                           onSubmit={values =>
-                            props.mutate(values, () => {
-                              window.location.assign('/');
-                            })
+                            props.mutate(
+                              values,
+                              () => {
+                                window.location.assign('/');
+                              },
+                              () => {
+                                alert(
+                                  'number of rooms and parkings must be integer'
+                                );
+                              }
+                            )
                           }
                         />
                       </div>

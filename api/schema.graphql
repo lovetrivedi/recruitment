@@ -45,8 +45,8 @@ type Property implements Node {
   id: ID!
   livingSurface: Float
   landSurface: Float
-  numberOfRooms: Float
-  numberOfParkings: Float
+  numberOfRooms: Int
+  numberOfParkings: Int
   createdAt: DateTime
   updatedAt: DateTime
 }
@@ -79,8 +79,8 @@ input PropertyInput {
   id: ID
   livingSurface: Float
   landSurface: Float
-  numberOfRooms: Float
-  numberOfParkings: Float
+  numberOfRooms: Int
+  numberOfParkings: Int
 }
 
 type Query {

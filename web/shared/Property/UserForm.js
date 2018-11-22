@@ -45,7 +45,7 @@ class UserForm extends React.Component {
           {errors.livingSurface && touched.livingSurface && (
             <div
               className="invalid-feedback"
-              style={{ position: 'absolute', bottom: '-10px' }}
+              style={{ position: 'absolute', bottom: '-10px', color: 'red' }}
             >
               {errors.livingSurface}
             </div>
@@ -80,7 +80,7 @@ class UserForm extends React.Component {
           {errors.landSurface && touched.landSurface && (
             <div
               className="invalid-feedback"
-              style={{ position: 'absolute', bottom: '-10px' }}
+              style={{ position: 'absolute', bottom: '-10px', color: 'red' }}
             >
               {errors.landSurface}
             </div>
@@ -115,7 +115,7 @@ class UserForm extends React.Component {
           {errors.numberOfRooms && touched.numberOfRooms && (
             <div
               className="invalid-feedback"
-              style={{ position: 'absolute', bottom: '-10px' }}
+              style={{ position: 'absolute', bottom: '-10px', color: 'red' }}
             >
               {errors.numberOfRooms}
             </div>
@@ -150,7 +150,7 @@ class UserForm extends React.Component {
           {errors.numberOfParkings && touched.numberOfParkings && (
             <div
               className="invalid-feedback"
-              style={{ position: 'absolute', bottom: '-10px' }}
+              style={{ position: 'absolute', bottom: '-10px', color: 'red' }}
             >
               {errors.numberOfParkings}
             </div>
@@ -162,7 +162,7 @@ class UserForm extends React.Component {
           disabled={isSubmitting}
           style={{
             float: 'right',
-            marginTop: 80,
+            marginTop: 160,
             width: 100,
             backgroundColor: '#327ccb',
             height: 35,
