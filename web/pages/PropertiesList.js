@@ -136,8 +136,10 @@ export default props => (
                             )
                           }
                         >
-                          {' '}
-                          delete{' '}
+                          <img
+                            src="https://cdn1.iconfinder.com/data/icons/business-office-and-internet-7/50/46-512.png"
+                            style={{ width: 20, height: 20 }}
+                          />
                         </Button>
                       )}
                     </PropertiesListDelete>

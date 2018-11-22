@@ -18,7 +18,7 @@ export const Layout = ({ children }: Props) => (
       min-width: 0;
     `}
   >
-    <AppBar position="static">
+    <AppBar position="static" style={{ backgroundColor: '#4080c4' }}>
       <Toolbar>
         <Typography variant="h6" color="inherit">
           RealAdvisor Starter-Kit
