@@ -8,7 +8,7 @@ import next from 'next';
 import { getConfig } from '../utils/getConfig';
 import { toPageHref } from '../utils/rewrites';
 
-const port = process.env.PORT != null ? process.env.PORT : 4000;
+const port = process.env.PORT != null ? process.env.PORT : 5656;
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
 
