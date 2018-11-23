@@ -125,7 +125,7 @@
     "node": "8"
   },
   "config": {
-    "API_ENDPOINT": "http://localhost:8080/graphql",
+    "API_ENDPOINT": "http://localhost:6767/graphql",
     "descr": [
       "SCRIPTS description",
       "test - pregenerate files and run tests",
