@@ -5,7 +5,7 @@ import './env';
 import app from './app';
 import db from './db_';
 
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 6767;
 
 const server = app.listen(port, () => {
   console.log(`API is listening on http://localhost:${port}/`);
